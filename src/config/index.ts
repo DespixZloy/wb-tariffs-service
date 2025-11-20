@@ -8,7 +8,7 @@ export const config = {
     tariffsUrl: process.env.WB_TARIFFS_URL!
   },
   db: {
-    host: process.env.DB_HOST || 'localhost',
+    host: process.env.DB_HOST || 'postgres',
     port: parseInt(process.env.DB_PORT || '5432'),
     name: process.env.DB_NAME || 'postgres',
     user: process.env.DB_USER || 'postgres',
