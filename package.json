@@ -1,0 +1,26 @@
+{
+  "name": "wb-tariffs-service",
+"version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "knex migrate:latest",
+    "migrate:make": "knex migrate:make"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "googleapis": "^126.0.1",
+    "knex": "^2.5.1",
+    "node-cron": "^3.0.2",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/node-cron": "^3.0.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
